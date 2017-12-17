@@ -5,7 +5,7 @@ WORKDIR /usr/src/app
 COPY package.json /usr/src/app
 
 COPY package-lock.json /usr/src/app
-
+RUN npm config set registry https://registry.npm.taobao.org
 RUN npm install
 
 RUN npm install pm2 -g
