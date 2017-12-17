@@ -18,5 +18,5 @@ app.use(bodyParser.json()); // add body parser
 app.use(instantMongoCrud(options)); // use as middleware
 
 app.listen(PORT, ()=>{
-	console.log('started');
+	console.log('started=================>');
 });
